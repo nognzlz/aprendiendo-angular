@@ -1,5 +1,5 @@
-app.controller = ('mainController', ['$scope', function($scope) {
-	$scope.title = 'Top Sellers in Booccccks';
+app.controller('mainController', ['$scope', function($scope) {
+	$scope.title = 'Top Sellers in Books';
 	$scope.promo = "REVIEW15";
 	$scope.products =
 	[
@@ -34,5 +34,5 @@ app.controller = ('mainController', ['$scope', function($scope) {
   ];
   $scope.plusOne = function(index) { 
   	$scope.products[index].likes += 1; 
-	};
+  };
 }]);
